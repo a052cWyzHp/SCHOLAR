@@ -1,0 +1,13 @@
+.env
+/vendor/
+/config/local.php
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/sessions/*
+!/storage/sessions/.gitkeep
+/storage/theses/*
+!/storage/theses/.gitkeep
+/storage/backups/*
+!/storage/backups/.gitkeep
+*.log
+*.bak
