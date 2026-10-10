@@ -21,7 +21,7 @@ if (file_exists($configPath) || file_exists(__DIR__ . '/../config/local.php')) {
     exit(2); // preserve both current settings and an old private configuration backup
 }
 
-// use the inspected XAMPP endpoint; this connection is for creating the separate development database
+// use the inspected Laragon endpoint; this connection is for creating the separate development database
 $options = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_EMULATE_PREPARES => false,

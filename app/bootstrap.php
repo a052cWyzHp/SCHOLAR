@@ -49,6 +49,11 @@ function handleError(int $severity, string $message, string $file, int $line): b
 set_exception_handler('handleException');
 set_error_handler('handleError');
 
+// use the same PHP minor version in Apache, terminal commands and deployment
+if (PHP_MAJOR_VERSION !== 8 || PHP_MINOR_VERSION !== 5) {
+    throw new RuntimeException('This project requires PHP 8.5.');
+}
+
 // Composer finds our classes and the installed libraries when they are used
 require_once __DIR__ . '/../vendor/autoload.php';
 

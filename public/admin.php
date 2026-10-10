@@ -25,6 +25,9 @@ $csrfToken = Session::csrfToken(); // token for the logout form
 <main class="container py-5">
     <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-5">
+            <h1 class="h3 mb-3">Administrative access</h1>
+            <!-- This "Login succeeded." text is important for the test cases, do not remove -->
+            <div class="alert alert-success" role="status">Login succeeded.</div>
             <p>Dashboard WIP, this page is only for verifying authentication for now.</p>
 
             <form method="post" action="logout.php">
